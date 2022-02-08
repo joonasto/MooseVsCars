@@ -6,46 +6,50 @@ Poista sitten *kaikki* suluilla merkityt kohdat.)
 
 ## Tietoja 
 
-Tekijä: (Etunimi Sukunimi)
+Tekijä: Joonas Tolvanen
 
 Työ git-varaston osoite: <https://gitlab.jyu.fi/anlakane/ohj1ht> (*Korvaa* tämä osoite oman git-varastosi osoitteella)
 
-Pelin nimi: (Nimi)
+Pelin nimi: MooseVsCars
 
-Pelialusta: Windows/macOS/Linux (Valitse alusta)
+Pelialusta: Windows
 
-Pelaajien lukumäärä: 1/2/3/4 (Valitse pelaajien lukumäärä)
+Pelaajien lukumäärä: 1
 
 ## Pelin tarina
 
-(Pelin tarina.)
+Pelin tarina kertoo hirvestä jonka ainut elämäntehtävä on koittaa tuhota mahdollisimman monta autoa. 
 
 ## Pelin idea ja tavoitteet
 
-(Pelin idea ja tavoitteet.)
+Pelin ideana on koittaa tuhota autoja hyppimällä niiden päälle. Autoja on erilaisia, pienistä autoista 
+(riisikippo) saat pisteitä ja isoista autoista (Katumaasturit ja rekat) menetät elämiä.
 
 ## Hahmotelma pelistä
 
 (Kun olet lisännyt suunnitelmakuvan tähän hakemistoon, linkitä se tähän alle. Alla on esimerkkikuvan linkitys.)
 
-![Esimerkkikuva](esimerkkikuva.png "Esimerkkikuva")
+![Hirvi](hirvimalli1.jpg "Pixelart tyylillä tehty hirvi")
+![Auto](riisikippo.jpg "Yksi autoista, jonka tuhoamalla saat pisteitä")
+![Tausta](tausta1.jpg "Pelin tausta")
 
 ## Toteutuksen suunnitelma
 
 Helmikuu
 
-- (Tavoite 1)
-- (Tavoite 2)
-- (Tavoite 3)
+- Hahmojen luominen
+- Pelin koodaamisen aloitus
+- Hahmojen animointi
+- Kentän luominen
 
 Maaliskuu
 
-- (Tavoite 1)
-- (Tavoite 2)
-- (Tavoite 3)
+- Hahmojen lisääminen peliin
+- Pistemittarin luominen
+- Elämämittarin luominen
 
 Jos aikaa jää
 
-- (Tavoite 1)
-- (Tavoite 2)
-- (Tavoite 3)
+- Kenttien viimeistely
+- Useampi kenttä
+- Pistelista
