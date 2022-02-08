@@ -27,7 +27,7 @@ Pelin ideana on koittaa tuhota autoja hyppimällä niiden päälle. Autoja on er
 
 ## Hahmotelma pelistä
 
-(Kun olet lisännyt suunnitelmakuvan tähän hakemistoon, linkitä se tähän alle. Alla on esimerkkikuvan linkitys.)
+
 
 ![Hirvi](hirvimalli1.jpg "Pixelart tyylillä tehty hirvi")
 ![Auto](riisikippo.jpg "Yksi autoista, jonka tuhoamalla saat pisteitä")
