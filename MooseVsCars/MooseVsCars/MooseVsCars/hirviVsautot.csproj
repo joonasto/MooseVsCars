@@ -5,6 +5,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <PublishReadyToRun>false</PublishReadyToRun>
         <TieredCompilation>false</TieredCompilation>
+        <Authors>Joonas Tolvanen</Authors>
     </PropertyGroup>
 
     <ItemGroup>
@@ -13,11 +14,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Content\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <None Update="Content\hirvimodel.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Content\kentta.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Content\kentta1.txt">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
       <None Update="Content\riisikippo.png">
