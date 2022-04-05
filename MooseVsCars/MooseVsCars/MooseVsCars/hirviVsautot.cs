@@ -37,23 +37,16 @@ namespace Program
 
         DoubleMeter alaspainlaskuri;
         Timer aikalaskuri;
-
+        
+        // T‰ss‰ aloitetaan peli
+        // ja kutsutaan alkuvalikko
+        // funktiota.
 
         public override void Begin()
        
         
         {
-            // T‰ss‰ aloitetaan peli
-            // ja kutsutaan alkuvalikko
-            // funktiota.
-
             AlkuValikko();
-
-
-
-
-
-
         }
 
 
@@ -65,8 +58,6 @@ namespace Program
         /// laskurin.
         /// </summary>
         private void LuoKentta()
-
-
         {
             ClearAll();
             TileMap kentta = TileMap.FromLevelAsset("kentta.txt");
@@ -91,7 +82,6 @@ namespace Program
 
             LuoPistelaskuri();
             LuoAikalaskuri();
-
         }
 
 
@@ -100,8 +90,6 @@ namespace Program
         // T‰ss‰ lis‰t‰‰n peliin vihollinen
         // ja luodaan sille attribuutit.
         {
-
-
             PlatformCharacter riisikippo = new PlatformCharacter(leveys, korkeus);
             riisikippo.Position = paikka;
             riisikippo.Image = riisikippoKuva;
@@ -117,9 +105,6 @@ namespace Program
             pfb.Loop = true;
             pfb.Speed = 60;
             riisikippo.Brain = pfb;
-
-
-
         }
 
 
@@ -127,49 +112,35 @@ namespace Program
 
         // t‰ss‰ lis‰t‰‰n peliin pelaaja.
         {
-
-
             pelaaja = new PlatformCharacter(leveys, korkeus);
             pelaaja.Position = paikka;
             pelaaja.Mass = 4.0;
             pelaaja.Image = hirviKuva;
             AddCollisionHandler(pelaaja, "riisikippo", Tormays);
             Add(pelaaja);
-
-
         }
 
 
         private void LisaaTaso(Vector paikka, double leveys, double korkeus)
         //T‰ss‰ lis‰t‰‰n peliin
         // tasohyppely tasot.
-
         {
-
-
             PhysicsObject taso = PhysicsObject.CreateStaticObject(leveys, korkeus);
             taso.Position = paikka;
             taso.Color = Color.Green;
             Add(taso);
-
-
         }
 
 
         private void LisaaNappaimet()
-
         // T‰ss‰ lis‰t‰‰n peliin n‰pp‰imet
         {
-
-
             Keyboard.Listen(Key.Up, ButtonState.Down, Hyppaa, "", pelaaja, HYPPYNOPEUS);
             Keyboard.Listen(Key.Left, ButtonState.Down, Liikuta, "", pelaaja, -NOPEUS);
             Keyboard.Listen(Key.Right, ButtonState.Down, Liikuta, "", pelaaja, NOPEUS);
 
 
             PhoneBackButton.Listen(ConfirmExit, "Lopeta peli");
-
-
         }
 
 
@@ -180,14 +151,11 @@ namespace Program
         /// </summary>
         /// <param name="pelaaja"></param>
         /// <param name="kohde"></param>
-
         {
 
 
             kohde.Destroy();
             pistelaskuri.Value += 1;
-
-
         }
 
 
@@ -197,10 +165,7 @@ namespace Program
         // Valikosta voit aloittaa
         // pelin uudelleen, tai tarkistella
         // parhaiden pisteiden listaa.
-
         {
-
-
             MultiSelectWindow alkuvalikko = new MultiSelectWindow("MooseVsCars", "Aloita peli", "Parhaat pisteet", "Lopeta");
             Add(alkuvalikko);
             alkuvalikko.AddItemHandler(0, LuoKentta);
@@ -211,34 +176,22 @@ namespace Program
             alkuvalikko.SetButtonColor(Color.GreenYellow);
 
             alkuvalikko.SetButtonTextColor(Color.Black);
-
-
         }
 
 
         private void Liikuta(PlatformCharacter pelaaja, double nopeus)
         //T‰ss‰ m‰‰ritell‰‰n pelaajan
         // liikkuminen 
-
         {
-
-
             pelaaja.Walk(nopeus);
-
-
         }
 
 
         private void Hyppaa(PlatformCharacter pelaaja, double nopeus)
         // T‰ss‰ m‰‰ritell‰‰n
         // pelaajalle hyppy.
-
         {
-
-
             pelaaja.Jump(nopeus);
-
-
         }
 
 
@@ -246,24 +199,18 @@ namespace Program
         // T‰m‰ aliohjelma
         // n‰ytt‰‰ pelin top 10
         // pistetaulukon
-
         {
 
 
             topLista.Show();
             topLista.HighScoreWindow.Closed += AloitaUudelleen;
-
-
         }
 
 
         private void LuoPistelaskuri()
         // T‰ss‰ luodaan pelille pistelaskuri 
         // joka laskee ker‰ttyjen autojen m‰‰r‰n.
-
         {
-
-
             pistelaskuri = new IntMeter(0);
 
             Label pistenaytto = new Label();
@@ -274,8 +221,6 @@ namespace Program
 
             pistenaytto.BindTo(pistelaskuri);
             Add(pistenaytto);
-
-
         }
 
 
@@ -284,8 +229,6 @@ namespace Program
         // joka mittaa aikaa 30 sekunnista 
         // alasp‰in
         {
-
-
             alaspainlaskuri = new DoubleMeter(30);
 
             aikalaskuri = new Timer();
@@ -299,8 +242,6 @@ namespace Program
             aikanaytto.BindTo(alaspainlaskuri);
             aikanaytto.Y = pelaaja.Y +100;
             Add(aikanaytto);
-
-
         }
 
 
@@ -309,8 +250,6 @@ namespace Program
         //T‰m‰ on aikalaskurin funktio
         // jolla aikaa lasketaan alasp‰in
         {
-
-
             alaspainlaskuri.Value -= 0.1;
 
             if (alaspainlaskuri.Value <= 0)
@@ -321,10 +260,7 @@ namespace Program
                 int lopullinenTulos = pistelaskuri.Value;
                 
                 PeliLoppui(lopullinenTulos);
-
-            }
-
-            
+            }            
         }
 
 
@@ -333,13 +269,9 @@ namespace Program
         // T‰ss‰ on pelin lopettamiseen liittyv‰ funktio
         // joka syˆtt‰‰ samalla pelaajan pisteet pistetaulukkoon
         {
-
-
             double lopullinenTulos = pelaajanTulos;
             topLista.EnterAndShow(lopullinenTulos);
             topLista.HighScoreWindow.Closed += AloitaUudelleen;
-
-
         }
 
 
@@ -348,12 +280,8 @@ namespace Program
         // T‰ll‰ peli saadaan alkamaan uudelleen
 
         {
-
-
             ClearAll();
             AlkuValikko();
-
-
         }
         // TODO: silmukka, ks: https://tim.jyu.fi/answers/kurssit/tie/ohj1/2022k/demot/demo9?answerNumber=10&task=d9t1&user=tolvanjo
         // TODO: Taulukko, lista ks: https://tim.jyu.fi/answers/kurssit/tie/ohj1/2022k/demot/demo10?answerNumber=9&task=lottod10&user=tolvanjo
