@@ -57,8 +57,6 @@ namespace Program
         }
 
 
-
-
         /// <summary>
         /// T‰m‰ funktio luo peliin
         /// kent‰n, lis‰‰ viholliset
@@ -95,6 +93,8 @@ namespace Program
             LuoAikalaskuri();
 
         }
+
+
         private void LisaaRiisikippo(Vector paikka, double leveys, double korkeus, int liikemaara, string kuva)
 
         // T‰ss‰ lis‰t‰‰n peliin vihollinen
@@ -122,6 +122,7 @@ namespace Program
 
         }
 
+
         private void LisaaPelaaja(Vector paikka, double leveys, double korkeus)
 
         // t‰ss‰ lis‰t‰‰n peliin pelaaja.
@@ -138,6 +139,7 @@ namespace Program
 
         }
 
+
         private void LisaaTaso(Vector paikka, double leveys, double korkeus)
         //T‰ss‰ lis‰t‰‰n peliin
         // tasohyppely tasot.
@@ -152,6 +154,7 @@ namespace Program
 
 
         }
+
 
         private void LisaaNappaimet()
 
@@ -168,6 +171,7 @@ namespace Program
 
 
         }
+
 
         public void Tormays(PhysicsObject pelaaja, PhysicsObject kohde)
         /// <summary>
@@ -211,6 +215,7 @@ namespace Program
 
         }
 
+
         private void Liikuta(PlatformCharacter pelaaja, double nopeus)
         //T‰ss‰ m‰‰ritell‰‰n pelaajan
         // liikkuminen 
@@ -223,6 +228,7 @@ namespace Program
 
         }
 
+
         private void Hyppaa(PlatformCharacter pelaaja, double nopeus)
         // T‰ss‰ m‰‰ritell‰‰n
         // pelaajalle hyppy.
@@ -234,8 +240,6 @@ namespace Program
 
 
         }
-
-
 
 
         private void ParhaatPisteet()
@@ -251,6 +255,7 @@ namespace Program
 
 
         }
+
 
         private void LuoPistelaskuri()
         // T‰ss‰ luodaan pelille pistelaskuri 
@@ -272,6 +277,7 @@ namespace Program
 
 
         }
+
 
         private void LuoAikalaskuri()
         // T‰ss‰ luodaan aikalaskuri
@@ -296,6 +302,7 @@ namespace Program
 
 
         }
+
 
         private void LaskeAlaspain()
 
@@ -335,6 +342,7 @@ namespace Program
 
         }
 
+
         private void AloitaUudelleen(Window sender)
 
         // T‰ll‰ peli saadaan alkamaan uudelleen
@@ -350,4 +358,6 @@ namespace Program
         // TODO: silmukka, ks: https://tim.jyu.fi/answers/kurssit/tie/ohj1/2022k/demot/demo9?answerNumber=10&task=d9t1&user=tolvanjo
         // TODO: Taulukko, lista ks: https://tim.jyu.fi/answers/kurssit/tie/ohj1/2022k/demot/demo10?answerNumber=9&task=lottod10&user=tolvanjo
     }
+
+
 }
