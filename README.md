@@ -30,9 +30,9 @@ The idea of ​​the game is to try to destroy cars by jumping on them. There a
 
 
 
-![Hirvi](hirvimalli1.jpg "Moose made in Pixelart style")
-![Auto](riisikippo.jpg "One of the cars that you get points for destroying")
-![Tausta](tausta1.jpg "Background of the game")
+![Moose](hirvimalli1.jpg "Moose made in Pixelart style")
+![Car](riisikippo.jpg "One of the cars that you get points for destroying")
+![Background](tausta1.jpg "Background of the game")
 
 
 The art was made by me using GIMP. 
