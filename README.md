@@ -14,6 +14,8 @@ Platform: Windows
 
 Player number: 1
 
+The language used in this project was c#. The game is using Jyväskylä Universitys own Jypeli game-engine (https://github.com/Jypeli-JYU/Jypeli) 
+
 ## Game story
 
 The story of the game is about a moose whose sole mission in life is to try to destroy as many cars as possible.
