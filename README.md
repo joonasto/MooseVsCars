@@ -1,29 +1,30 @@
-# Harjoitustyön suunnitelma
+# Readme for class project (Programming 1 Jyväskylä University)
 
 
 
-## Tietoja 
+## Information 
 
-Tekijä: Joonas Tolvanen
+Author: Joonas Tolvanen
 
-Työ git-varaston osoite: <https://gitlab.jyu.fi/tolvanjo/moose-vs-cars/> 
+The address of the project git repository: <https://github.com/joonasto/MooseVsCars> 
 
-Pelin nimi: MooseVsCars
+Game name: MooseVsCars
 
-Pelialusta: Windows
+Platform: Windows
 
-Pelaajien lukumäärä: 1
+Player number: 1
 
-## Pelin tarina
+## Game story
 
-Pelin tarina kertoo hirvestä jonka ainut elämäntehtävä on koittaa tuhota mahdollisimman monta autoa. 
+The story of the game is about a moose whose sole mission in life is to try to destroy as many cars as possible.
 
-## Pelin idea ja tavoitteet
+## The idea and goals of the game
 
-Pelin ideana on koittaa tuhota autoja hyppimällä niiden päälle. Autoja on erilaisia, pienistä autoista 
-(riisikippo) saat pisteitä ja isoista autoista (Katumaasturit ja rekat) menetät elämiä.
 
-## Hahmotelma pelistä
+The idea of ​​the game is to try to destroy cars by jumping on them. There are different types of cars, from small cars
+(rice bin) you get points and for big cars (SUVs and trucks) you lose lives.
+
+## Characters from the game
 
 
 
@@ -31,23 +32,3 @@ Pelin ideana on koittaa tuhota autoja hyppimällä niiden päälle. Autoja on er
 ![Auto](riisikippo.jpg "Yksi autoista, jonka tuhoamalla saat pisteitä")
 ![Tausta](tausta1.jpg "Pelin tausta")
 
-## Toteutuksen suunnitelma
-
-Helmikuu
-
-- Hahmojen luominen
-- Pelin koodaamisen aloitus
-- Hahmojen animointi
-- Kentän luominen
-
-Maaliskuu
-
-- Hahmojen lisääminen peliin
-- Pistemittarin luominen
-- Elämämittarin luominen
-
-Jos aikaa jää
-
-- Kenttien viimeistely
-- Useampi kenttä
-- Pistelista
