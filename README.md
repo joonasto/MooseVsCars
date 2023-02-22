@@ -1,4 +1,4 @@
-# Readme for class project (Programming 1 Jyväskylä University)
+# Readme for class project (Programming 1, Jyväskylä University)
 
 
 
@@ -28,7 +28,9 @@ The idea of ​​the game is to try to destroy cars by jumping on them. There a
 
 
 
-![Hirvi](hirvimalli1.jpg "Pixelart tyylillä tehty hirvi")
-![Auto](riisikippo.jpg "Yksi autoista, jonka tuhoamalla saat pisteitä")
-![Tausta](tausta1.jpg "Pelin tausta")
+![Hirvi](hirvimalli1.jpg "Moose made in Pixelart style")
+![Auto](riisikippo.jpg "One of the cars that you get points for destroying")
+![Tausta](tausta1.jpg "Background of the game")
 
+
+The art was made by me using GIMP. 
